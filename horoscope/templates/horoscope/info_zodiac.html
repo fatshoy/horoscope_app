@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css_additional %}
+<link rel="stylesheet" href="{% static 'horoscope/css/info.css' %}">
+{% endblock %}
+
+{% block title %}
+    Horoscope for {{sign|title}}
+{% endblock %}
+
+{% block content%}
+    {% include 'includes/navbar.html' %}
+    <h1>{{sign|capfirst}}</h1>
+    {%if description_zodiac is None %}
+        <h2> Неправильный знак зодиака - {{sign}} </h2>
+    {% else %}
+        <h2> {{ description_zodiac|capfirst }} </h2>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,32 @@
+
+
+html {
+    background-color: #3199dc;
+}
+
+nav {
+    text-align: center;
+    font-family: helvetica;
+    font-size: 2rem;
+    color: red;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+nav a {
+    color: white;
+    display: block;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+nav a:hover, ul a:active {
+    color: #eca8b5;
+}
